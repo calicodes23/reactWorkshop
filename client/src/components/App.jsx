@@ -1,10 +1,13 @@
 import React from 'react';
+import Child from './Child';
+import Input from './Input';
 
 const App = (props) => {
   console.log('props', props);
   return (
     <div>
-      <h1> hi</h1>
+      <Child text="some text" />
+      <Input label="username" type="password"/>
     </div>
   );
 };
